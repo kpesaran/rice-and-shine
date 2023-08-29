@@ -1,0 +1,64 @@
+html {
+  margin: 0;
+}
+@font-face {
+  font-family: 'Orbit'; /* you can name it anything you want */
+  src: url('../assets/fonts/Orbit/Orbit-Regular.ttf'); /* path to your font file */
+}
+
+@font-face {
+  font-family: 'Saira_Condensed'; /* you can name it anything you want */
+  src: url('../assets/fonts/Saira_Condensed/SairaCondensed-Light.ttf'); /* path to your font file */
+}
+@font-face {
+  font-family: 'Tilt_Prism'; /* you can name it anything you want */
+  src: url('../assets/fonts/Tilt_Prism/TiltPrism-Regular-VariableFont_XROT\,YROT.ttf'); /* path to your font file */
+}
+
+@font-face {
+  font-family: 'Cinzel'; /* you can name it anything you want */
+  src: url('../assets/fonts/Cinzel/Cinzel-VariableFont_wght.ttf'); /* path to your font file */
+}
+@font-face {
+  font-family: 'Unica_One'; /* you can name it anything you want */
+  src: url('../assets/fonts/Unica_One/UnicaOne-Regular.ttf'); /* path to your font file */
+}
+
+@font-face {
+  font-family: 'Hind'; /* you can name it anything you want */
+  src: url('../assets/fonts/Hind/Hind-Regular.ttf'); /* path to your font file */
+}
+#page {
+  
+  border-left: 4px solid #87b7d6; /* Left first border color */
+  border-right: 4px solid #87b7d6; /* Right first border color */
+  border-bottom: 4px solid #87b7d6; /* Bottom first border color */
+  box-shadow: inset 4px 0 0 0 #fff9da,
+    /* Left second border color */ inset 4px 0 0 0 #fff9da,
+    /* Right second border color */ inset 8px 0 0 0 #fcc3b9,
+    /* Left third border color */ inset 8px 0 0 0 #fcc3b9,
+    /* Right third border color */ inset 0 4px 0 0 #fff9da,
+    /* Bottom second border color */ inset 0 8px 0 0 #fcc3b9; /* Bottom third border color */
+  // margin-left: 8px;
+}
+
+.top-img {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  // margin-top: 8px;
+  border-top: 4px solid #fcc3b9; /* First border color */
+  box-shadow: 0 -4px 0 0 #fff9da, /* Second border color */ 0 -8px 0 0 #87b7d6; /* Third border color */
+}
+
+.page-container {
+  margin-top: 188px;
+  box-sizing: border-box;
+  // margin-left: 8px;
+  // margin-right: 8px;
+}

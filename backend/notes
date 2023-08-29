@@ -1,0 +1,3 @@
+if you bind it from local host you can only get access to servber from this
+
+if you want a seperate machine to post info to , you have to bind into '0.0.0.0' 
