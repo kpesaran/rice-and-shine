@@ -44,3 +44,18 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+
+To Do:
+
+1) Fallback options for font
+
+2) Footer 
+
+3) Put in hamburger menu that can click for list
+- https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined
+https://fonts.google.com/icons
+
+4) make it mobile friendly 
+

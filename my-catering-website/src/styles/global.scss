@@ -1,6 +1,29 @@
 html {
   margin: 0;
+  //min-height: 100% !important ;
+
 }
+
+body {
+  min-height: 100%  
+}
+
+#page {
+  min-height: 100%
+}
+
+#root {
+  min-height: 100%;
+  
+}
+
+button {
+  margin: 20px;
+  background-color: white;
+  padding: 15px 32px;
+
+}
+
 @font-face {
   font-family: 'Orbit'; /* you can name it anything you want */
   src: url('../assets/fonts/Orbit/Orbit-Regular.ttf'); /* path to your font file */
@@ -28,23 +51,115 @@ html {
   font-family: 'Hind'; /* you can name it anything you want */
   src: url('../assets/fonts/Hind/Hind-Regular.ttf'); /* path to your font file */
 }
+h2 {
+  font-family: "cinzel";
+  //font-family: 'Unica_One';
+}
+h3 {
+  font-family: "orbit";
+  font-family: "cinzel";
+  //font-family: 'Unica_One';
+}
+p  {
+  font-family: "Saira_Condensed";
+ 
+  //font-family: 'Unica_One';
+  //font-family: "cinzel";
+}
+
+//styling border for page content (does not include navBar)
+
+.outer-container {
+  border: 6px solid #87b7d6;
+  
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  position: sticky;
+}
+.middle-container {
+  border: 6px solid #fff9da;
+  box-sizing: border-box;
+  display: flex;
+  flex-grow: 1;
+}
+
+.inner-container {
+  border: 6px solid #fcc3b9;
+  box-sizing: border-box;
+  flex-grow: 1;
+  display: flex;
+  //overflow: auto;
+}
+
+.inner-inner-container {
+  border: 6px solid #87b7d6;
+  flex-grow: 1;
+}
+
+.content-container {
+  border-top: 6px solid #87b7d6;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+h5 {
+  //font-family: 'Unica_One';
+  font-size: 24px;
+  font-family: 'Orbit';
+}
+
+.content-container > * {
+  //margin-bottom: 1rem;
+}
+ 
+//borders for top of content container
+
+// #top-border {
+//   border-top: 6px solid #87b7d6;
+//   box-sizing: border-box;
+//   width: 100%;
+// }
+
+#middle-border {
+  border-top: 6px solid #fcc3b9;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#bottom-border {
+  border-top: 6px solid #fff9da;
+  box-sizing: border-box;
+  width: 100%;
+}
+
 #page {
   
-  border-left: 4px solid #87b7d6; /* Left first border color */
-  border-right: 4px solid #87b7d6; /* Right first border color */
-  border-bottom: 4px solid #87b7d6; /* Bottom first border color */
-  box-shadow: inset 4px 0 0 0 #fff9da,
-    /* Left second border color */ inset 4px 0 0 0 #fff9da,
-    /* Right second border color */ inset 8px 0 0 0 #fcc3b9,
-    /* Left third border color */ inset 8px 0 0 0 #fcc3b9,
-    /* Right third border color */ inset 0 4px 0 0 #fff9da,
-    /* Bottom second border color */ inset 0 8px 0 0 #fcc3b9; /* Bottom third border color */
-  // margin-left: 8px;
+  // border-left: 4px solid #87b7d6; /* Left first border color */
+  // border-right: 4px solid #87b7d6; /* Right first border color */
+  // border-bottom: 4px solid #87b7d6; /* Bottom first border color */
+  // box-shadow: inset 4px 0 0 0 #fff9da,
+  //   /* Left second border color */ 
+  //   inset 4px 0 0 0 #fff9da,
+  //   /* Right second border color */ 
+  //   inset 8px 0 0 0 #fcc3b9,
+  //   /* Left third border color */ 
+  //   inset 8px 0 0 0 #fcc3b9,
+  //   /* Right third border color */ 
+  //   inset 0 4px 0 0 #fff9da,
+  //   /* Bottom second border color */ 
+  //   inset 0 8px 0 0 #fcc3b9; /* Bottom third border color */
+  // // margin-left: 8px;
 }
 
 .top-img {
   width: 100%;
   box-sizing: border-box;
+  border-top: #87b7d6;
+  border-bottom: #87b7d6;
 }
 
 .container {
@@ -52,13 +167,15 @@ html {
   margin: auto;
   box-sizing: border-box;
   // margin-top: 8px;
-  border-top: 4px solid #fcc3b9; /* First border color */
-  box-shadow: 0 -4px 0 0 #fff9da, /* Second border color */ 0 -8px 0 0 #87b7d6; /* Third border color */
+  // border-top: 4px solid #fcc3b9; /* First border color */
+  // box-shadow: 0 -4px 0 0 #fff9da, /* Second border color */ 0 -8px 0 0 #87b7d6; /* Third border color */
 }
 
 .page-container {
-  margin-top: 188px;
+  // margin-top: 188px;
   box-sizing: border-box;
+  overflow: auto;
   // margin-left: 8px;
   // margin-right: 8px;
 }
+

@@ -5,7 +5,15 @@
   margin: auto;
   box-sizing: border-box;
   // margin-top: 8px;
-  border-top: 4px solid #fcc3b9; /* First border color */
-  box-shadow: inset 0 -4px 0 0 #fff9da, /* Second border color */
-   inset 0 -8px 0 0 #87b7d6; /* Third border color */
+}
+
+.home-body {
+  font-size: 28px;
+  max-width: 75%;
+  margin-bottom: 50px;
+}
+
+#home-heading {
+  margin: 30px;
+  font-style: "cinzel";
 }

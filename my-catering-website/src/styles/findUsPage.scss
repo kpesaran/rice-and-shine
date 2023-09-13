@@ -1,4 +1,27 @@
+@import "global.scss";
+
 #display-info {
     display: flex;
-    gap: 30px;
+    gap: 50px;
+    justify-content: center;
+}
+
+
+#find-us-heading {
+    font-size: 36px;
+    margin: 25px;
+    //color: rgb(255, 153, 0);
+}
+#find-us-subheading {
+    font-size: 72px;
+    text-align: center;
+    font-family: 'Orbit';
+    color: #284254;
+    
+}
+.subHeading {
+    font-size: 48px;
+    max-width: 28%;
+    margin: 75px;
+
 }
