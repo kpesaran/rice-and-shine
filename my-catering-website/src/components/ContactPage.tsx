@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import '../styles/contactPage.scss';
 import axios from 'axios';
-import contactImg from '/Users/keyan/Desktop/coding/personal_projects/rice-and-shine/my-catering-website/src/assets/images/contact.png';
+import React, { useState } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import contactImg from '../assets/images/contact.png';
+import '../styles/contactPage.scss';
 
 //github private repos, add David as contributer...
 
@@ -37,46 +37,57 @@ const ContactPage: React.FC = () => {
       <div id='top-border'>
         <div id='middle-border'>
           <div id='bottom-border'></div>
-          <div className='content-container' >
+          <div className='content-container'>
             <Container className='container'>
               <Row className='justify-content-md-center'>
                 <Col md={6}>
                   <div className='text-center'>
-                    <h1 className = 'contact-heading'>Contact Us</h1>
-                    <p className = 'contact-subheading'>We'd love to hear from you!</p>
+                    <h1 className='contact-heading'>Contact Us</h1>
+                    <p className='contact-subheading'>
+                      We'd love to hear from you!
+                    </p>
                     <form onSubmit={handleSubmit}>
                       <div className='form-group'>
-                        <label className='contact-label-heading'htmlFor='name'>Name</label>
+                        <label className='contact-label-heading' htmlFor='name'>
+                          Name
+                        </label>
                         <input
                           required
                           type='text'
                           className='form-control'
                           id='name'
                           value={name}
-                          onChange={(e) => setName(e.target.value)}
+                          onChange={e => setName(e.target.value)}
                         />
                       </div>
                       <div className='form-group'>
-                        <label className='contact-label-heading' htmlFor='email'>Email address</label>
+                        <label
+                          className='contact-label-heading'
+                          htmlFor='email'>
+                          Email address
+                        </label>
                         <input
                           required
                           type='email'
                           className='form-control'
                           value={email}
                           id='email'
-                          onChange={(e) => setEmail(e.target.value)}
+                          onChange={e => setEmail(e.target.value)}
                         />
                       </div>
                       <div className='form-group'>
-                        <label className='contact-label-heading' htmlFor='message'>Message</label>
+                        <label
+                          className='contact-label-heading'
+                          htmlFor='message'>
+                          Message
+                        </label>
                         <textarea
                           required
                           className='form-control'
                           id='message'
                           rows={10}
                           value={message}
-                          onChange={(e) => setMessage(e.target.value)}
-                        ></textarea>
+                          onChange={e => setMessage(e.target.value)}></textarea>
                       </div>
                       <button type='submit' className='btn btn-primary'>
                         Submit
