@@ -8,12 +8,7 @@ const ServicesPage: React.FC = () => {
     {
       title: 'Private Parties and Celebrations',
       description:
-        "Host your next celebration with us! Whether it's a birthday party, anniversary, holiday gathering, or just a gathering with your loved ones, we'll provide delicious food and exceptional service",
-    },
-    {
-      title: 'Wedding Catering',
-      description:
-        "Make your special day even more memorable with our wedding catering services"
+        "Host your next celebration with us for a meal your friends & family won't forget. Whether it's a birthday party, graduation celebration, or just a gathering with your loved ones, we'll provide the delicious food. We can deliver pre-made paella up to 250 people. For added entertainment at your next event we offer  on-site paella in pans up to 3 feet wide",
     },
     {
       title: 'Corporate Event Catering',
@@ -21,11 +16,17 @@ const ServicesPage: React.FC = () => {
         'We provide catering services for corporate events, including lunches, dinners, and networking events',
     },
     {
-      title: 'Farmers Market Stand',
+      title: 'Paella Cooking Demonstration',
       description:
-        'Visit us at the local farmers market to enjoy fresh, locally-sourced food from our stand.',
+        'Are you and your friends foodies that are interested in learning and seeing the entire process of cooking delicious paella? Host both an entertaining, educating, and interactive evening with one of our trained chefs who will show you the entire process of making paella',
     },
-   
+    
+
+    // {
+    //   title: 'Paella Delivery',
+    //   description:
+    //     'We can deliver Paella to your house if you live within 35 miles from Boulder, CO',
+    // },
   ];
 
   return (
@@ -36,12 +37,12 @@ const ServicesPage: React.FC = () => {
           <div id='bottom-border'>
             <div className='content-container'>
               <Container className='home-container'>
-                <h2 id = 'services-heading'>Our Services</h2>
+                <h2 id='services-heading'>Our Services</h2>
                 <Row>
                   {services.map((service) => (
                     <Col md={6} className='services' key={service.title}>
-                      <h3 className = 'services-subheading'>{service.title}</h3>
-                      <p className = 'services-body'>{service.description}</p>
+                      <h3 className='services-subheading'>{service.title}</h3>
+                      <p className='services-body'>{service.description}</p>
                     </Col>
                   ))}
                 </Row>

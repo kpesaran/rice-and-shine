@@ -1,0 +1,63 @@
+@import 'global.scss';
+
+#footer-top-border {
+  border-top: 6px solid #87b7d6;
+  box-sizing: border-box;
+  width: 100%;
+}
+#footer-outter-middle-border {
+  border-top: 6px solid #fff9da;
+  box-sizing: border-box;
+  width: 100%;
+}
+#footer-inner-middle-border {
+  border-top: 6px solid #fcc3b9;
+  box-sizing: border-box;
+  width: 100%;
+}
+// #footer-inner-border {
+//   border-top: 6px solid #87b7d6;
+//   box-sizing: border-box;
+//   width: 100%;
+// }
+
+.fixed-footer {
+  width: 100%;
+  position: sticky;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 10px 0;
+  color: rgb(130, 100, 100);
+  bottom: 24px;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+//    height: 4rem;
+}
+
+
+#footer-heading {
+    color: rgb(255, 153, 0);
+    font-size: 36px;
+    font-family: 'Unica_One', Arial, Helvetica, sans-serif;
+    //font-family: 'Cinzel';
+    padding: 0;
+}
+
+#footer-subheading {
+    color: rgb(57, 56, 56);
+    font-size: 10px;
+    margin-top: -15px;
+    font-family: 'Orbit', Arial, Helvetica, sans-serif;
+}
+
+#insta-logo {
+  height: 32px;
+  margin-top: -7px;
+}
+#contact-logo {
+  height: 32px;
+  margin-top: -7px;
+}
+

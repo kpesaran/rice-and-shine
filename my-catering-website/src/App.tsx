@@ -10,6 +10,7 @@ import MenuPage from './components/MenuPage';
 import ShopPage from './components/ShopPage';
 import FindUsPage from './components/FindUsPage';
 import productList, { Product } from './assets/productData';
+import Footer from "./components/Footer"
 
 import './styles/global.scss';
 //maintain shopping cart state here through useContext...
@@ -48,10 +49,12 @@ const App: React.FC = () => {
                     }
                   />
                 </Routes>
+                <Footer/>
                             </div>
                           </div>
                         </div>
               </div>
+              
       </BrowserRouter>
     </div>
   );

@@ -59,3 +59,28 @@ https://fonts.google.com/icons
 
 4) make it mobile friendly 
 
+
+
+import { createContext, useContext, useState } from 'react';
+
+const context = createContext<any>(null);
+
+export function GlobalStateProvider({ children }: { children: JSX.Element }) {
+  const [stateA, setStateA] = useState();
+  const [stateB, setStateB] = useState();
+  ...
+  const [stateZ, setStateZ] = useState();
+
+  const value = {
+    A: { stateA, setStateA },
+    B: { stateB, setStateB },
+    ...
+    Z: { stateZ, setStateZ }
+  };
+
+  return <context.Provider value={value}>{children}</context.Provider>;
+}
+
+export function useGlobalState() {
+  return useContext(context);
+}

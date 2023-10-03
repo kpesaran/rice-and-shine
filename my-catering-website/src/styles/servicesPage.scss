@@ -1,10 +1,11 @@
 #services-heading {
   margin-top: 25px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .services-subheading {
-  font-style: 'Unica_One' !important;
+  font-family: 'Unica_One' !important;
   margin: 25px;
 }
 
@@ -13,4 +14,10 @@
   margin: 20px;
   color: rgb(58, 58, 58);
   //font-family: 'hind';
+}
+
+@media (max-width: 400px) {
+  #services-heading{
+      margin-bottom: 0px;
+  }
 }

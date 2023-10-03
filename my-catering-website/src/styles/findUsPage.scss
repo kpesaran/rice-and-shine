@@ -1,27 +1,67 @@
 @import "global.scss";
-
+//displays the the two times
 #display-info {
     display: flex;
-    gap: 50px;
+    gap: 20px;
     justify-content: center;
+    margin-top: -10px;
 }
+//displays entire content is horizontal view
+.findus-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+}
+.findUs-content {
+    //flex-grow: 0;
+}
+
 
 
 #find-us-heading {
-    font-size: 36px;
-    margin: 25px;
+    font-size: 28px;
+    margin: 20px;
+    text-align: center;
+    align-self: center;
     //color: rgb(255, 153, 0);
 }
 #find-us-subheading {
-    font-size: 72px;
+    font-size: 48px;
+    margin-top: 10px;
     text-align: center;
-    font-family: 'Orbit';
-    color: #284254;
+    font-family: 'Unica_One',;
+    color: #70a1c4;
+    align-self: flex-start;
     
 }
-.subHeading {
-    font-size: 48px;
-    max-width: 28%;
-    margin: 75px;
 
+#at-the-text {
+    font-size: 30px;
+}
+.subHeading {
+    font-size: 38px;
+    margin: 30px;
+
+}
+@media (max-width: 400px) {
+    .findus-display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #display-info {
+        display: flex;
+        justify-content: center;
+        margin-top: -30px;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .subHeading {
+        font-size: 24px;
+        margin: 5px;
+    }
 }

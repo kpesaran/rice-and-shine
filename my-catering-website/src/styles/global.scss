@@ -9,19 +9,45 @@ body {
 }
 
 #page {
-  min-height: 100%
+  min-height: 100%;
+  box-sizing: border-box;
 }
 
 #root {
   min-height: 100%;
   
 }
-
+Button {
+  background-color: #fcc3b9;
+}
+.btn-primary {
+  -bs-btn-color: #fff;
+    /* --bs-btn-bg: #0d6efd; */
+    --bs-btn-border-color: #0d6efd;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #87b7d6;
+    --bs-btn-hover-border-color: #87b7d6;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #87b7d6;
+    --bs-btn-active-bg: #87b7d6;
+    --bs-btn-active-border-color: #87b7d6;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
 button {
   margin: 20px;
   background-color: white;
+  color: #87b7d6;
   padding: 15px 32px;
+  font-weight: bold;
 
+}
+.btn {
+  margin: 20px;
+  font-weight: bold;
+  background-color: white;
+  color: #87b7d6;
+  border: 3px solid #87b7d6;
+  padding: 15px 32px;
 }
 
 @font-face {
@@ -52,16 +78,16 @@ button {
   src: url('../assets/fonts/Hind/Hind-Regular.ttf'); /* path to your font file */
 }
 h2 {
-  font-family: "cinzel";
+  font-family: "cinzel", Arial, Helvetica, sans-serif;
   //font-family: 'Unica_One';
 }
 h3 {
-  font-family: "orbit";
-  font-family: "cinzel";
+  font-family: "orbit", Arial, Helvetica, sans-serif;
+  font-family: "cinzel", Arial, Helvetica, sans-serif;
   //font-family: 'Unica_One';
 }
 p  {
-  font-family: "Saira_Condensed";
+  font-family: "Saira_Condensed", Arial, Helvetica, sans-serif;
  
   //font-family: 'Unica_One';
   //font-family: "cinzel";
@@ -69,9 +95,13 @@ p  {
 
 //styling border for page content (does not include navBar)
 
+Footer {
+  // flex-grow: 1;
+  //height: 4rem;
+}
+
 .outer-container {
   border: 6px solid #87b7d6;
-  
   min-height: 100vh;
   box-sizing: border-box;
   display: flex;
@@ -94,6 +124,8 @@ p  {
 
 .inner-inner-container {
   border: 6px solid #87b7d6;
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
 }
 
@@ -105,6 +137,7 @@ p  {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  flex-grow: 1;
 }
 h5 {
   //font-family: 'Unica_One';
@@ -118,11 +151,11 @@ h5 {
  
 //borders for top of content container
 
-// #top-border {
-//   border-top: 6px solid #87b7d6;
-//   box-sizing: border-box;
-//   width: 100%;
-// }
+#top-border {
+  flex-grow: 1;
+  box-sizing: border-box;
+
+}
 
 #middle-border {
   border-top: 6px solid #fcc3b9;
@@ -154,7 +187,9 @@ h5 {
   //   inset 0 8px 0 0 #fcc3b9; /* Bottom third border color */
   // // margin-left: 8px;
 }
-
+.img-container {
+  overflow: hidden;
+}
 .top-img {
   width: 100%;
   box-sizing: border-box;
@@ -175,7 +210,22 @@ h5 {
   // margin-top: 188px;
   box-sizing: border-box;
   overflow: auto;
+  flex-grow: 1;
+  //display: flex;
   // margin-left: 8px;
   // margin-right: 8px;
 }
 
+@media (max-width: 400px) {
+ 
+  .content-container {
+    border-top: 6px solid #87b7d6;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+  }
+}

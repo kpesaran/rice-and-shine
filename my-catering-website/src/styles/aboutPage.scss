@@ -1,8 +1,16 @@
 #about-us-heading {
-  margin: 25px
+  margin: 25px;
+  text-align: center;
 }
 
 #about-us-body {
   margin: 50px;
   font-size: 36px;
+}
+
+@media (max-width: 400px) {
+  #about-us-body {
+    margin: 10px;
+    font-size: 28px;
+  }
 }

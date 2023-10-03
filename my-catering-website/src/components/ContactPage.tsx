@@ -37,17 +37,18 @@ const ContactPage: React.FC = () => {
       <div id='top-border'>
         <div id='middle-border'>
           <div id='bottom-border'></div>
-          <div className='content-container'>
+          <div className='content-container' >
             <Container className='container'>
               <Row className='justify-content-md-center'>
                 <Col md={6}>
                   <div className='text-center'>
-                    <h1>Contact Us</h1>
-                    <p>We'd love to hear from you!</p>
+                    <h1 className = 'contact-heading'>Contact Us</h1>
+                    <p className = 'contact-subheading'>We'd love to hear from you!</p>
                     <form onSubmit={handleSubmit}>
                       <div className='form-group'>
-                        <label htmlFor='name'>Name</label>
+                        <label className='contact-label-heading'htmlFor='name'>Name</label>
                         <input
+                          required
                           type='text'
                           className='form-control'
                           id='name'
@@ -56,8 +57,9 @@ const ContactPage: React.FC = () => {
                         />
                       </div>
                       <div className='form-group'>
-                        <label htmlFor='email'>Email address</label>
+                        <label className='contact-label-heading' htmlFor='email'>Email address</label>
                         <input
+                          required
                           type='email'
                           className='form-control'
                           value={email}
@@ -66,11 +68,12 @@ const ContactPage: React.FC = () => {
                         />
                       </div>
                       <div className='form-group'>
-                        <label htmlFor='message'>Message</label>
+                        <label className='contact-label-heading' htmlFor='message'>Message</label>
                         <textarea
+                          required
                           className='form-control'
                           id='message'
-                          rows={3}
+                          rows={10}
                           value={message}
                           onChange={(e) => setMessage(e.target.value)}
                         ></textarea>
