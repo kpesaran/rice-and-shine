@@ -1,0 +1,84 @@
+.header {
+  background-color: white;
+  padding-top: 1rem;
+  position: sticky;
+  top: 0;
+
+  .main {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      margin: 1.5rem auto;
+      text-align: center;
+
+      h1 {
+        color: #f90;
+        font-family: Unica_One, Arial, Helvetica, sans-serif;
+        font-size: 4.5rem;
+        text-transform: uppercase;
+      }
+
+      p {
+        color: rgb(57, 56, 56);
+        font-family: Orbit, Arial, Helvetica, sans-serif;
+        margin-top: -1.25rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .main {
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+
+      .title {
+        margin: 0;
+        text-align: left;
+
+        h1 {
+          color: #f90;
+          font-family: Unica_One, Arial, Helvetica, sans-serif;
+          font-size: 2rem;
+          text-transform: uppercase;
+        }
+
+        p {
+          color: rgb(57, 56, 56);
+          font-family: Orbit, Arial, Helvetica, sans-serif;
+          margin-top: -0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+
+  .brand {
+    h6 {
+      color: rgb(255, 153, 0);
+      font-family: Unica_One, Arial, Helvetica, sans-serif;
+      font-size: 2.25rem;
+    }
+
+    p {
+      color: rgb(57, 56, 56);
+      font-family: Orbit, Arial, Helvetica, sans-serif;
+      font-size: 0.625rem;
+      margin-top: -0.5rem;
+    }
+  }
+
+  img {
+    display: block;
+    height: 2rem;
+  }
+}
