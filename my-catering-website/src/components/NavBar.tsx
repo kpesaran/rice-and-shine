@@ -1,9 +1,16 @@
 import { Navbar, Nav } from 'react-bootstrap';
+import { useState } from 'react';
 import '../styles/navBar.scss';
 import HamburgerIcon from './HamburgerIcon';
 import { Link } from 'react-router-dom';
 
 export default function NavBar() {
+  const [isDropdownOpen, setDropdownOpen] = useState<boolean>(false);
+  
+  const toggleDropdown = () => {
+      setDropdownOpen(!isDropdownOpen);
+  };
+  
   return (
     <nav className='navbar'>
       <div id='high'>
@@ -18,7 +25,8 @@ export default function NavBar() {
                   </p>
                 </Navbar.Brand>
                 <div id='hamburger-menu'>
-                  <HamburgerIcon/>
+                  <HamburgerIcon  isDropdownOpen={isDropdownOpen}
+          toggleDropdown={toggleDropdown}/>
                 </div>
                 <Nav className='ml-auto'>
                   <Nav.Link className='nav-link-custom' href='/'>

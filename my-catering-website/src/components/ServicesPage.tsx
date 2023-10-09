@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../styles/servicesPage.scss';
-import eventImg from '/Users/keyan/Desktop/coding/personal_projects/rice-and-shine/my-catering-website/src/assets/images/home_page_image.png';
+import eventImg from '../assets/images/home_page_image.png';
 
 const ServicesPage: React.FC = () => {
   const services = [

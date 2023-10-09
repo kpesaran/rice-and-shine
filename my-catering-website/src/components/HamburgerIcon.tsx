@@ -3,16 +3,14 @@ import { Link } from 'react-router-dom';
 import '../styles/hamburgerIcon.scss';
 import { useGlobalState } from '../contexts/NavPopUpContext';
 
-
-const HamburgerIcon: React.FC = () => {
-  const [isDropdownOpen, setDropdownOpen] = useState(false);
-  const { toggleNavPopUp } = useGlobalState()
+interface HamburgerIconProps {
+  isDropdownOpen: boolean;
+  toggleDropdown: () => void;
+}
+const HamburgerIcon: React.FC<HamburgerIconProps> = ({ isDropdownOpen, toggleDropdown }) => {
+ 
   
-  const toggleDropdown = () => {
-      setDropdownOpen(!isDropdownOpen);
-      toggleNavPopUp();
-      
-  };
+  const { toggleNavPopUp } = useGlobalState();
   return (
     <div className='hamburger-icon-container'>
       <div className={isDropdownOpen ? 'hamburger-icon change' : 'hamburger-icon'} onClick={toggleDropdown}>
@@ -23,27 +21,27 @@ const HamburgerIcon: React.FC = () => {
       {isDropdownOpen && (
               <ul className='dropdown'>
                    <li>
-            <Link to='/' onClick={() => setDropdownOpen(false)}>
+            <Link to='/' onClick={() => toggleDropdown()}>
               Home
             </Link>
           </li>
                   <li>
-            <Link to='/about' onClick={() => setDropdownOpen(false)}>
+            <Link to='/about' onClick={() => toggleDropdown()}>
               About
             </Link>
           </li>
           <li>
-            <Link to='/findus' onClick={() => setDropdownOpen(false)}>
+            <Link to='/findus' onClick={() => toggleDropdown()}>
               Find Us
             </Link>
                   </li>
                   <li>
-            <Link to='/services' onClick={() => setDropdownOpen(false)}>
+            <Link to='/services' onClick={() => toggleDropdown()}>
               Events
             </Link>
           </li>
           <li>
-            <Link to='/contact' onClick={() => setDropdownOpen(false)}>
+            <Link to='/contact' onClick={() => toggleDropdown()}>
               Contact Us
             </Link>
           </li> 
