@@ -1,0 +1,25 @@
+{
+  "name": "rice-and-shine",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "build": "vite build",
+    "clean": "rm -rf ./dist",
+    "dev": "vite --host 0.0.0.0 --port 8080",
+    "start": "vite preview --host 0.0.0.0 --port 8080"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.24",
+    "@types/react-dom": "^18.2.8",
+    "@vitejs/plugin-react": "^4.1.0",
+    "npm-check-updates": "^16.14.4",
+    "sass": "^1.68.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0"
+  }
+}

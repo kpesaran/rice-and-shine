@@ -1,0 +1,57 @@
+.desktop-nav {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+
+  button {
+    color: #e68e93;
+    font-family: 'Hind', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 0.5rem;
+    transition: 0.2s;
+  }
+
+  button:hover {
+    color: rgb(57, 56, 56);
+  }
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    position: relative;
+
+    .btn {
+      color: #87b7d6;
+      font-size: 2.5rem;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      position: absolute;
+      top: 3rem;
+      right: 0;
+
+      button {
+        background-color: white;
+        color: rgb(57, 56, 56);
+        filter: drop-shadow(0 0 0.2rem gray);
+        font-family: Hind, Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        min-width: max-content;
+        padding: 0.5rem 0.75rem;
+      }
+    }
+  }
+}

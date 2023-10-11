@@ -10,18 +10,21 @@
   // margin-top: 8px;
 }
 
+
 .not-in-browser {
   display: none;
 }
 
 .home-body {
   font-size: 28px;
-  max-width: 75%;
+  max-width: 80%;
   margin-bottom: 50px;
+  // font-weight: bold;
 }
 
 #home-img-container {
   display: flex;
+  text-align: center;
   flex-direction: row;
   justify-content: center;
 }
@@ -51,10 +54,17 @@
   margin-right: 2px;
   justify-content: space-between;
 }
+.tile-row {
 
+  box-sizing: border-box;
+  justify-content: space-between;
+  height: 200px;
+}
 .body-img-container {
   display: flex;
   flex-wrap: nowrap;
+  align-self: center;
+  justify-self: center;
 }
 
 .home-subheading {

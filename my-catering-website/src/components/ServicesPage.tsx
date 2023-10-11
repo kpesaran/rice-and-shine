@@ -1,7 +1,11 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import '../styles/servicesPage.scss';
+import { Col, Container, Row } from 'react-bootstrap';
 import eventImg from '../assets/images/home_page_image.png';
+
+import '../styles/servicesPage.scss';
+// <<<<<<< HEAD
+// =======
+// >>>>>>> remotes/origin/david
 
 const ServicesPage: React.FC = () => {
   const services = [
@@ -20,7 +24,6 @@ const ServicesPage: React.FC = () => {
       description:
         'Are you and your friends foodies that are interested in learning and seeing the entire process of cooking delicious paella? Host both an entertaining, educating, and interactive evening with one of our trained chefs who will show you the entire process of making paella',
     },
-    
 
     // {
     //   title: 'Paella Delivery',
@@ -37,10 +40,10 @@ const ServicesPage: React.FC = () => {
           <div id='bottom-border'>
             <div className='content-container'>
               <Container className='home-container'>
-                <h2 id='services-heading'>Our Services</h2>
+                <h2 id='services-heading'> Services</h2>
                 <Row>
-                  {services.map((service) => (
-                    <Col md={6} className='services' key={service.title}>
+                  {services.map(service => (
+                    <Col md={20} className='services' key={service.title}>
                       <h3 className='services-subheading'>{service.title}</h3>
                       <p className='services-body'>{service.description}</p>
                     </Col>

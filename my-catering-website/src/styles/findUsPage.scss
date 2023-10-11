@@ -1,67 +1,166 @@
-@import "global.scss";
+@import 'global.scss';
+
 //displays the the two times
 #display-info {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: -10px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: -10px;
+  text-align: center;
 }
 //displays entire content is horizontal view
 .findus-display {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-grow: 1;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 .findUs-content {
-    //flex-grow: 0;
+  //flex-grow: 0;
 }
-
-
 
 #find-us-heading {
-    font-size: 28px;
-    margin: 20px;
-    text-align: center;
-    align-self: center;
-    //color: rgb(255, 153, 0);
+  font-size: 32px;
+  margin: 20px;
+  text-align: center;
+  align-self: center;
+  //color: rgb(255, 153, 0);
 }
 #find-us-subheading {
-    font-size: 48px;
-    margin-top: 10px;
-    text-align: center;
-    font-family: 'Unica_One',;
-    color: #70a1c4;
-    align-self: flex-start;
-    
+  font-size: 48px;
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Unica_One';
+  color: #70a1c4;
+  align-self: flex-start;
 }
 
 #at-the-text {
-    font-size: 30px;
+  font-size: 30px;
 }
 .subHeading {
-    font-size: 38px;
-    margin: 30px;
+  font-size: 38px;
+  margin: 30px;
+}
+#right-upper {
+  height: 150px;
+}
+#left-large {
+  height: 400px;
+}
 
+.pictures-container {
+  display: flex;
+  gap: 10px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  // background-image: url('../assets/images/background-spanish-1.png');
+  // background-repeat: repeat;
+}
+.right-half-pictures {
+  width: calc(
+    70% - 20px
+  ); /* Assuming 50% space for the right container and accounting for half the gap */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between upper image and bottom row */
+}
+
+.upper-right-half {
+  width: 70%;
+  height: auto;
+  display: block;
+}
+#left-large {
+  width: calc(
+    30% - 20px
+  ); /* Assuming 50% space for large image and accounting for half the gap */
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+#right-upper {
+  width: calc(100%);
+  height: auto;
+}
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between small images */
+}
+
+.small-pics {
+  width: calc(
+    33.33% - (2 / 3 * 20px)
+  ); /* Each image takes up a third, minus the gap */
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 700px) {
+  .pictures-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .subHeading {
+    margin-bottom: 0px;
+  }
+  #display-info {
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    flex-direction: column;
+    margin: 10px;
+  }
+  #left-large {
+    width: 100%;
+  }
+  .right-half-pictures {
+    width: 100%;
+  }
 }
 @media (max-width: 400px) {
-    .findus-display {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    #display-info {
-        display: flex;
-        justify-content: center;
-        margin-top: -30px;
-        flex-direction: column;
-        margin: 10px;
-    }
-    .subHeading {
-        font-size: 24px;
-        margin: 5px;
-    }
+  .findus-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .pictures-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  #display-info {
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .subHeading {
+    font-size: 24px;
+    margin: 5px;
+  }
+
+  #left-large {
+    width: 100%;
+  }
+  .right-half-pictures {
+    width: 100%;
+  }
+  .small-pics {
+    width: 100%;
+    flex-direction: column;
+  }
+  .bottom-row {
+      display: none;
+      flex-direction: column;
+  }
 }

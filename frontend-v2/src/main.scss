@@ -1,0 +1,123 @@
+// reset
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+hr {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+// fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+@font-face {
+  font-family: Cinzel;
+  src: url('/fonts/Cinzel/Cinzel-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: Hind;
+  src: url('/fonts/Hind/Hind-Light.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Hind;
+  src: url('/fonts/Hind/Hind-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Hind;
+  src: url('/fonts/Hind/Hind-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Orbit;
+  src: url('/fonts/Orbit/Orbit-Regular.ttf');
+}
+
+@font-face {
+  font-family: Unica_One;
+  src: url('/fonts/Unica_One/UnicaOne-Regular.ttf');
+}
+
+// general-purpose classes
+
+.block {
+  display: block;
+}
+
+.b-blue {
+  border: solid #87b7d6;
+}
+
+.b-yellow {
+  border: solid #fff9da;
+}
+
+.b-pink {
+  border: solid #fcc3b9;
+}
+
+.b-3 {
+  border-width: 3px;
+}
+
+.b-6 {
+  border-width: 6px;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+
+  h1 {
+    font-family: Cinzel, Arial, Helvetica, sans-serif;
+    margin: 1.5rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    max-width: 64rem;
+  }
+}
