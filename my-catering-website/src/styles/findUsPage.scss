@@ -4,20 +4,35 @@
 #display-info {
   display: flex;
   gap: 20px;
-  justify-content: center;
-  margin-top: -10px;
+  justify-content: space-between;
+  //margin-top: -10px;
   text-align: center;
+  flex-shrink: 1;
+  
 }
 //displays entire content is horizontal view
 .findus-display {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
-  flex-grow: 1;
+  flex-direction: column;
+  //flex-grow: 1;
+  ;
 }
-.findUs-content {
+.background {
   //flex-grow: 0;
+  background-image: url(../assets/images/city-sunrise.png);
+  // background-image: url(../assets/images/home-option1.png);
+  
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+  
+  
 }
 
 #find-us-heading {
@@ -31,9 +46,11 @@
   font-size: 48px;
   margin-top: 10px;
   text-align: center;
+  align-self: center;
+  justify-self: center;
   font-family: 'Unica_One';
-  color: #70a1c4;
-  align-self: flex-start;
+  color: whitesmoke
+  //align-self: flex-start;
 }
 
 #at-the-text {
@@ -41,7 +58,8 @@
 }
 .subHeading {
   font-size: 38px;
-  margin: 30px;
+  color: whitesmoke;
+  font-weight: bold;
 }
 #right-upper {
   height: 150px;
@@ -55,6 +73,8 @@
   gap: 10px;
   margin-left: 2rem;
   margin-right: 2rem;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
   // background-image: url('../assets/images/background-spanish-1.png');
   // background-repeat: repeat;
 }
@@ -99,6 +119,15 @@
   height: 100%;
 }
 
+@media (max-width: 1200px) {
+  #left-large {
+    display: none;
+  }
+  .right-half-pictures {
+    width: auto;
+  }
+}
+
 @media (max-width: 700px) {
   .pictures-container {
     display: flex;
@@ -130,9 +159,15 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-right: 40px;
+    margin-left: 40px;
+   
+  }
+  #find-us-subheading {
+    font-size: 54px;
   }
   .pictures-container {
-    display: flex;
+    display: none;
     flex-direction: column;
     margin-right: 10px;
     margin-left: 10px;
@@ -145,7 +180,7 @@
     margin: 10px;
   }
   .subHeading {
-    font-size: 24px;
+    font-size: 32px;
     margin: 5px;
   }
 

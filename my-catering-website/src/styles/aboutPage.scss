@@ -1,12 +1,24 @@
+@import 'global.scss';
+
 #about-us-heading {
   margin: 25px;
   text-align: center;
   font-family: 'Unica_One', Arial, Helvetica, sans-serif;
+  color: $pink;
 }
 
 #about-us-body {
-  margin: 50px;
+  margin: 30px;
   font-size: 36px;
+  text-align: center;
+}
+#about-paella-pic {
+  width: 50%;
+  margin: .5em;
+  align-self: center;
+ float: left;
+ border-radius: 10px;
+  // z
 }
 
 @media (max-width: 400px) {

@@ -1,14 +1,21 @@
+@import 'global.scss';
+
+
 #services-heading {
   margin-top: 25px;
   margin-bottom: 20px;
   text-align: center;
+  font-size: 24px;
   font-family: 'Unica_One', Arial, Helvetica, sans-serif;
+ 
 }
 
 .services-subheading {
   font-family: 'Unica_One' !important;
   margin: 10px;
   text-align: center;
+  color: $primary1-color;
+  font-weight: bold;
 }
 
 .services-body {

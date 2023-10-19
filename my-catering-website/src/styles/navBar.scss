@@ -1,3 +1,5 @@
+@import 'global.scss';
+
 @media (min-width: 991px) {
   .navbar-container {
     display: flex;
@@ -15,6 +17,7 @@
   .navbar-collapse {
     z-index: 1001; /* Set the z-index value to be higher than page content */
   }
+
   .navbar {
     padding: 0px;
 
@@ -42,7 +45,7 @@
   }
 
   .navbar-title {
-    color: rgb(255, 153, 0);
+    color: $primary1-color;
     font-size: 72px;
     font-family: 'Unica_One', Arial, Helvetica, sans-serif;
     //font-family: 'Cinzel';
@@ -52,7 +55,7 @@
   .navbar-subtitle {
     color: rgb(57, 56, 56);
     font-size: 16px;
-    margin-top: -33px;
+    margin-top: -20px;
     font-family: 'Orbit', Arial, Helvetica, sans-serif;
     //font-family: 'Unica_One';
   }
@@ -67,14 +70,13 @@
     //font-family: 'Cinzel';
   }
   .nav-link-custom {
-    color: #e68e93;
+    color: $pink;
     font-size: 24px;
     padding: 0px;
   }
 }
 
 //when under 991 do this:
-
 
 #high {
   border-bottom: 6px solid #fcc3b9;
@@ -106,7 +108,7 @@
   //   margin-top: 2rem; /* add some margin */
   // }
   .navbar-title {
-    color: rgb(255, 153, 0);
+    color: $primary1-color;
     font-size: 36px;
     font-family: 'Unica_One', Arial, Helvetica, sans-serif;
     //font-family: 'Cinzel';
@@ -117,7 +119,7 @@
   .navbar-subtitle {
     color: rgb(57, 56, 56);
     font-size: 16px;
-    margin-top: -15px;
+    margin-top: -10px;
     font-family: 'Orbit', Arial, Helvetica, sans-serif;
     //font-family: 'Unica_One';
   }
@@ -139,8 +141,6 @@
     justify-self: center;
     margin-right: 80px;
     //box-sizing: border-box;
-    
-
   }
 
   .nav-link {
@@ -170,7 +170,7 @@
     margin: 0;
   }
   .navbar-title {
-    color: rgb(255, 153, 0);
+    color: $primary1-color;
     font-size: 24px;
     font-family: 'Unica_One', Arial, Helvetica, sans-serif;
     //font-family: 'Cinzel';
@@ -180,7 +180,6 @@
   .navbar-subtitle {
     font-size: 8px;
     margin-top: -8px;
-
   }
 
   #hamburger-menu {

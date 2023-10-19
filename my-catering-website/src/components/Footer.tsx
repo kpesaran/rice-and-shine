@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
               <div className='brand-footer'>
                 <div id='name-container'>
                   <h6 id='footer-heading'>RICE & SHINE</h6>
-                  <p id='footer-subheading'>A Paella Stand in Boulder, C0</p>
+                  <p id='footer-subheading'>A Paella Stand in Boulder, CO</p>
                 </div>
               </div>
               <a href='http://instagram.com'>

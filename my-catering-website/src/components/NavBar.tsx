@@ -4,12 +4,17 @@ import '../styles/navBar.scss';
 import HamburgerIcon from './HamburgerIcon';
 import { Link } from 'react-router-dom';
 
-export default function NavBar() {
-  const [isDropdownOpen, setDropdownOpen] = useState<boolean>(false);
+interface NavBarProps {
+  isDropdownOpen: boolean;
+  toggleDropdown: () => void;
+}
+
+const NavBar: React.FC<NavBarProps> = ({ isDropdownOpen, toggleDropdown }) => {
+  // const [isDropdownOpen, setDropdownOpen] = useState<boolean>(false);
   
-  const toggleDropdown = () => {
-      setDropdownOpen(!isDropdownOpen);
-  };
+  // const toggleDropdown = () => {
+  //     setDropdownOpen(!isDropdownOpen);
+  // };
   
   return (
     <nav className='navbar'>
@@ -38,7 +43,7 @@ export default function NavBar() {
                   <Nav.Link href='/findus' className='nav-link-custom'>
                     find us
                   </Nav.Link>
-                  {/* <Nav.Link href="/menu" className="nav-link-custom">menu</Nav.Link> */}
+                  <Nav.Link href="/menu" className="nav-link-custom">menu</Nav.Link>
                   <Nav.Link className='nav-link-custom' href='/services'>
                     services
                   </Nav.Link>
@@ -56,3 +61,5 @@ export default function NavBar() {
     </nav>
   );
 }
+
+export default NavBar

@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import '../styles/homePage.scss';
 import homeImg from '../assets/images/another.png';
-import tile from '../assets/images/background-spanish-1.png'
+import tile from '../assets/images/tile.png';
 import photo_passing_paella2 from '../assets/images/Rice and Shine Photos/Low Res/EE_RiceandShine23_2026-lowres.jpg';
 import photo_passing_paella1 from '../assets/images/Rice and Shine Photos/Low Res/EE_RiceandShine23_1358-lowres.jpg';
 import photo_passing_paella5 from '../assets/images/Rice and Shine Photos/Low Res/EE_RiceandShine23_0228-lowres.jpg';
-import photo_passing_paella3 from '../assets/images/Rice and Shine Photos/Low Res/EE_RiceandShine23_0940-lowres.jpg' ;
+import photo_passing_paella3 from '../assets/images/Rice and Shine Photos/Low Res/EE_RiceandShine23_0940-lowres.jpg';
 import photo_passing_paella4 from '../assets/images/Rice and Shine Photos/Low Res/EE_RiceandShine23_1690-lowres.jpg';
 const HomePage: React.FC = () => {
   return (
@@ -18,7 +18,7 @@ const HomePage: React.FC = () => {
       <div id='top-border'>
         <div id='middle-border'>
           <div id='bottom-border'>
-            <div  id = 'home-content-container' >
+            <div id='home-content-container'>
               <div className='content-container'>
                 {/* <h1>Tapaya</h1> */}
                 {/* <h3 id='home-heading'>
@@ -27,20 +27,17 @@ const HomePage: React.FC = () => {
                 </h3> */}
                 <h5 className='home-subheading' id='top-subheading'>
                   {' '}
-                  A Culinary Journey Awaits at the Boulder Farmers Market!
+                  A Culinary Journey Awaits at the Boulder Farmers Market
                 </h5>
-              
-              
+
                 <p className='home-body'>
                   {' '}
-                  Join us every Saturday from 9 am to 2 pm and Wednesday from 4 pm
-                  to 8 pm to delight in our authentic and locally-inspired
-                  culinary offerings. Our paella is meticulously crafted on 3 ft pans by our trained chefs. At Rice & Shine, we invite you to savor the
-                  rich flavors of our freshly made paellas and refreshing
-                  beverages.
+                  Join us every Saturday, from 9 am to 2 pm, to indulge in our
+                  authentic and locally-inspired culinary offerings.  Watch our paella
+                  get meticulously crafted on expansive 3-foot pans by our trained chefs. Rice & Shine welcomes you to discover the depth of flavors in our freshly prepared paellas, complemented by our array of freshly made beverages.
                 </p>
-              
-                <div className = 'body-img-container'>
+
+                <div className='body-img-container'>
                   <img
                     className='middle-img-home not-in-phone'
                     src={photo_passing_paella3}
@@ -62,26 +59,19 @@ const HomePage: React.FC = () => {
                   The Secret Behind Our Signature Paellas{' '}
                 </h5>
                 <img
-                    className='middle-img-home not-in-browser'
-                    src={photo_passing_paella1}
-                  ></img>
+                  className='middle-img-home not-in-browser'
+                  src={photo_passing_paella1}
+                ></img>
                 <p className='home-body'>
-                  Our pride resides in our signature paellas, a masterpiece
-                  crafted with a blend of authentic and premium ingredients. We
-                  use Valencia rice, which is imported from Spain, and also use
-                  aromatic saffron, two types of paprika, olive oil. We take it a
-                  step further by infusing our dishes with fresh, local produce
-                  like mushrooms, bridging Spain's paella tradition with local
-                  Colorado agricultural.
+                  Our pride resides in our signature paellas, crafted with a
+                  blend of both authentic and premium ingredients. We then roast Valencia
+                  rice, a prized import from the fields of Spain, and enhance it with the exotic fragrance of saffron and the distinct, smoky nuances of two varieties of paprika, all unified by the richness of olive oil. . We enrich our paellas with fresh, local produce such as earthy mushrooms, seamlessly merging Spain's revered paella heritage with the abundant harvest of Colorado..
                 </p>
                 <h5 className='home-subheading'>
                   Catering Services Tailored to Your Occasion
                 </h5>
                 <p className='home-body'>
-                  Looking to elevate your next event with a touch of Spanish
-                  flair? We are delighted to extend our catering services,
-                  bringing a unique experience for both you and your guests directly to your
-                  table.
+                Seeking more than just catering for your next event? Let Rice & Shine transcend ordinary catering by delivering an immersive experience that captivates you and your guests. Our services are not just about serving food; they're about bringing a memorable culinary journey right to your gathering..
                 </p>
                 {/* <div className = 'body-img-container'>
                   <img

@@ -16,33 +16,7 @@
   cursor: pointer;
 }
 
-.dropdown {
-  position: absolute;
-  top: 100%;
-  right: 100;
-  list-style-type: none;
-  padding: 0;
-  background-color: #fff;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
 
-.dropdown li {
-  padding: 8px 16px;
-  border-bottom: 1px solid #ddd;
-  font-size: 24px;
-  font-style: "orbit", Arial, Helvetica, sans-serif !important;
-  margin: 0;
-}
-
-.dropdown li:last-child {
-  border-bottom: none;
-}
-
-.dropdown li a {
-  color: #333;
-  text-decoration: none;
-  display: block;
-}
 
 .change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);

@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import './nav.scss';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import 
 
 function Nav() {
   const [open, setOpen] = useState<boolean>(false);
@@ -14,11 +16,23 @@ function Nav() {
   return (
     <>
       <nav className='desktop-nav'>
-        <button>home</button>
+             {/* <BrowserRouter>
+              <Routes>
+                <Route path="/" element ={<Home/>}> 
+                </Route>
+                <Route path="/about" element ={<About/>}> 
+                </Route>
+              </Routes>
+            </BrowserRouter > */}
+            <BrowserRouter>
+         <Routes>
+         <Route path="/" element ={<Home/>}> <button>home</button></Route>
         <button>about</button>
         <button>find us</button>
         <button>services</button>
         <button>contact us</button>
+        </Routes>
+            </BrowserRouter >
       </nav>
       <nav className='mobile-nav'>
         <button onClick={() => setOpen(!open)}>

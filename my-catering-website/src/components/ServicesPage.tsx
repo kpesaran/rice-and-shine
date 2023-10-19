@@ -12,17 +12,17 @@ const ServicesPage: React.FC = () => {
     {
       title: 'Private Parties and Celebrations',
       description:
-        "Host your next celebration with us for a meal your friends & family won't forget. Whether it's a birthday party, graduation celebration, or just a gathering with your loved ones, we'll provide the delicious food. We can deliver pre-made paella up to 250 people. For added entertainment at your next event we offer  on-site paella in pans up to 3 feet wide",
+      "Let us transform your next gathering into an unforgettable feast! From birthday bashes to graduation celebration or intimate gatherings with dear ones, your event deserves a memorable meal. Delight in our specialty - delivering mouth-watering,  paella for crowds of up to 250 guests. Elevate your celebration with an interactive culinary spectacle; our chefs perform on-site cooking with paella pans spanning up to 3 feet.",
     },
     {
       title: 'Corporate Event Catering',
       description:
-        'We provide catering services for corporate events, including lunches, dinners, and networking events',
+      "Infuse business with pleasure through our exquisite catering services tailored for corporate affairs. Whether it's a formal luncheon, a classy dinner, or a bustling networking event, our culinary offerings set the perfect tone for your corporate needs. Taste the dedication, savor the professionalism.",
     },
     {
       title: 'Paella Cooking Demonstration',
       description:
-        'Are you and your friends foodies that are interested in learning and seeing the entire process of cooking delicious paella? Host both an entertaining, educating, and interactive evening with one of our trained chefs who will show you the entire process of making paella',
+        "Unleash the foodie within! Join us for a sizzling journey through the authentic art of paella cooking. Our skilled chefs bring the flavors of Spain to your personal cooking demonstration, blending entertainment, education, and hands-on experience. Witness the transformation of simple ingredients into a beautiful paella and dive into an evening where learning tastes deliciously satisfying!",
     },
 
     // {

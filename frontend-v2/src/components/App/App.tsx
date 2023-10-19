@@ -27,14 +27,15 @@ function App() {
               <hr className='b-yellow b-3' />
               <hr className='b-pink b-3' />
             </header>
-            <BrowserRouter>
+            {/* <BrowserRouter>
               <Routes>
-                <Route path="/" element ={<Home/>}> <Home />
+                <Route path="/" element ={<Home/>}> 
                 </Route>
-                <Route path="/about" element ={<About/>}> <Home />
+                <Route path="/about" element ={<About/>}> 
                 </Route>
               </Routes>
-            </BrowserRouter >
+            </BrowserRouter > */}
+            <Home />
             <hr className='b-blue b-3' />
             <hr className='b-yellow b-3' />
             <hr className='b-pink b-3' />

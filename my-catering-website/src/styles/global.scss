@@ -1,3 +1,10 @@
+$primary1-color: #87b7d6;
+$primary2-color: rgb(255, 153, 0);
+$secondary-color: rgb(57, 56, 56);
+$pink: #e68e93;
+
+
+
 html {
   margin: 0;
   //min-height: 100% !important ;
@@ -66,6 +73,10 @@ button {
 }
 
 @font-face {
+  font-family: 'Fira_Sans'; /* you can name it anything you want */
+  src: url('../assets/fonts/Fira_Sans/FiraSans-Light.ttf'); 
+}
+@font-face {
   font-family: 'Cinzel'; /* you can name it anything you want */
   src: url('../assets/fonts/Cinzel/Cinzel-VariableFont_wght.ttf'); /* path to your font file */
 }
@@ -89,7 +100,7 @@ h3 {
 }
 p  {
   font-family: "Saira_Condensed", Arial, Helvetica, sans-serif;
- 
+  
   //font-family: 'Unica_One';
   //font-family: "cinzel";
 }
@@ -217,7 +228,10 @@ h5 {
   // margin-right: 8px;
 }
 
-@media (max-width: 400px) {
+
+
+
+@media (max-width: 410px) {
  
   .content-container {
     border-top: 6px solid #87b7d6;

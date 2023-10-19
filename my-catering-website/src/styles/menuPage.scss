@@ -1,0 +1,31 @@
+#menu-img-wide {
+  margin: 0px;
+}
+#menu-page {
+  display: flex;
+}
+.vert-menu {
+  display: none;
+}
+
+#menu-page-content {
+  justify-content: space-around;
+}
+
+@media (max-width: 1000px) {
+  #menu-img-wide {
+    display: none;
+  }
+  .vert-menu {
+    display: flex;
+    flex-direction: column;
+    // overflow: scroll;
+  }
+
+  #menu-page-content {
+    justify-content: center;
+  }
+  .vert-img {
+    width: 100%;
+  }
+}

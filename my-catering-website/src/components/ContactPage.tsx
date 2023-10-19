@@ -45,9 +45,9 @@ const ContactPage: React.FC = () => {
                 <Col md={6}>
                   <div className='text-center'>
                     <h1 className='contact-heading'>Contact Us</h1>
-                    <p className='contact-subheading'>
+                    {/* <p className='contact-subheading'>
                       We'd love to hear from you!
-                    </p>
+                    </p> */}
                     <form onSubmit={handleSubmit}>
                       <div className='form-group'>
                         <label className='contact-label-heading' htmlFor='name'>

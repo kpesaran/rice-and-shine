@@ -18,7 +18,7 @@ const HamburgerIcon: React.FC<HamburgerIconProps> = ({ isDropdownOpen, toggleDro
         <div className='bar2'></div>
         <div className='bar3'></div>
       </div>
-      {isDropdownOpen && (
+      {/* {isDropdownOpen && (
               <ul className='dropdown'>
                    <li>
             <Link to='/' onClick={() => toggleDropdown()}>
@@ -46,7 +46,7 @@ const HamburgerIcon: React.FC<HamburgerIconProps> = ({ isDropdownOpen, toggleDro
             </Link>
           </li> 
         </ul>
-      )}{' '}
+      )}{' '} */}
     </div>
   );
 };

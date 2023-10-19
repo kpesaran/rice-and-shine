@@ -1,5 +1,7 @@
+@import "global.scss";
 .contact-heading {
     font-family: 'Unica_One', Arial, Helvetica, sans-serif;
+    color: $primary1-color;
 }
 #contact-content-container {
     display: flex;
@@ -13,7 +15,8 @@
 }
 //border for inputs
 .form-control {
-    border: 2px solid #fcc3b9
+    border: 1px solid;
+
 }
 
 @media (max-width: 400px) {

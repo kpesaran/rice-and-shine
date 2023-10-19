@@ -4,9 +4,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/index.js",
-    "start2": "node ./src/index_2.js",
-    "start3": "node ./src/index_3.js"
+    "start": "node ./src/index_3.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.17",

@@ -16,7 +16,7 @@
 }
 
 .home-body {
-  font-size: 28px;
+  font-size: 30px;
   max-width: 80%;
   margin-bottom: 50px;
   // font-weight: bold;
@@ -24,8 +24,7 @@
 
 #home-img-container {
   display: flex;
-  text-align: center;
-  flex-direction: row;
+
   justify-content: center;
 }
 
@@ -39,8 +38,8 @@
 // }
 
 #home-heading {
-  margin: 25px;
-  font-style: 'cinzel', Arial, Helvetica, sans-serif;
+  margin: 28px;
+  font-style: 'Unica_One', Arial, Helvetica, sans-serif;
   text-align: center;
   // display: none;
 }
@@ -64,18 +63,19 @@
   display: flex;
   flex-wrap: nowrap;
   align-self: center;
-  justify-self: center;
+  justify-content: center;
+  gap: 40px;
 }
 
 .home-subheading {
-  font-family: 'hind', Arial, Helvetica, sans-serif;
+  font-family: 'Unica_One', Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 32px;
+  font-size: 36px;
   width: 70%;
   margin-right: 50px;
   margin-left: 50px;
-  color: #87b7d6;
+  color: $primary1-color;
 }
 
 @media (max-width: 400px) {
@@ -116,5 +116,6 @@
   .home-body {
     margin-left: 10px;
     margin-right: 10px;
+    text-align: center;
   }
 }
