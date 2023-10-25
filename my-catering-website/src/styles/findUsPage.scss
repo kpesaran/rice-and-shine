@@ -9,6 +9,7 @@
   text-align: center;
   flex-shrink: 1;
   
+  
 }
 //displays entire content is horizontal view
 .findus-display {
@@ -16,14 +17,17 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  background-color: rgba(84, 141, 172, 0.249);
+  width: auto;
+  text-align: center;
+
   //flex-grow: 1;
   ;
 }
 .background {
   //flex-grow: 0;
-  background-image: url(../assets/images/city-sunrise.png);
+  background-image: url(../assets/images/city-sunrise-2.png);
   // background-image: url(../assets/images/home-option1.png);
-  
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
@@ -161,7 +165,11 @@
     flex-direction: column;
     margin-right: 40px;
     margin-left: 40px;
+    background-color: rgba(255, 255, 255, 0);
    
+  }
+  .background {
+  background-image: url(../assets/images/city-sunrise.png);
   }
   #find-us-subheading {
     font-size: 54px;

@@ -44,14 +44,14 @@ const ContactPage: React.FC = () => {
               <Row className='justify-content-md-center'>
                 <Col md={6}>
                   <div className='text-center'>
-                    <h1 className='contact-heading'>Contact Us</h1>
+                    <h1 className='contact-heading'>CONTACT US</h1>
                     {/* <p className='contact-subheading'>
                       We'd love to hear from you!
                     </p> */}
                     <form onSubmit={handleSubmit}>
                       <div className='form-group'>
                         <label className='contact-label-heading' htmlFor='name'>
-                          Name
+                          NAME
                         </label>
                         <input
                           required
@@ -66,7 +66,7 @@ const ContactPage: React.FC = () => {
                         <label
                           className='contact-label-heading'
                           htmlFor='email'>
-                          Email address
+                          EMAIL ADDRESS
                         </label>
                         <input
                           required
@@ -81,7 +81,7 @@ const ContactPage: React.FC = () => {
                         <label
                           className='contact-label-heading'
                           htmlFor='message'>
-                          Message
+                          MESSAGE
                         </label>
                         <textarea
                           required

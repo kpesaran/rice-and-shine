@@ -16,7 +16,7 @@ const AboutPage: React.FC = () => {
               <Container>
                 <Row>
                   <Col className='main-container'>
-                    <h2 id='about-us-heading'>About Us</h2>
+                    <h2 id='about-us-heading'>ABOUT US</h2>
                     {/*  */}
                     <img
                       className='top-img'

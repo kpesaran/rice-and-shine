@@ -27,7 +27,7 @@ const HomePage: React.FC = () => {
                 </h3> */}
                 <h5 className='home-subheading' id='top-subheading'>
                   {' '}
-                  A Culinary Journey Awaits at the Boulder Farmers Market
+                  A CULINARY JOURNEY AWAITS AT THE BOULDER FARMERS MARKET
                 </h5>
 
                 <p className='home-body'>
@@ -56,7 +56,7 @@ const HomePage: React.FC = () => {
                   ></img>
                 </div>
                 <h5 className='home-subheading'>
-                  The Secret Behind Our Signature Paellas{' '}
+                  THE SECRET BEHIND OUR SIGNAUTURE PAELLAS{' '}
                 </h5>
                 <img
                   className='middle-img-home not-in-browser'
@@ -68,7 +68,7 @@ const HomePage: React.FC = () => {
                   rice, a prized import from the fields of Spain, and enhance it with the exotic fragrance of saffron and the distinct, smoky nuances of two varieties of paprika, all unified by the richness of olive oil. . We enrich our paellas with fresh, local produce such as earthy mushrooms, seamlessly merging Spain's revered paella heritage with the abundant harvest of Colorado..
                 </p>
                 <h5 className='home-subheading'>
-                  Catering Services Tailored to Your Occasion
+                  CATERING SERVICES TAILORED TO YOUR OCCASION
                 </h5>
                 <p className='home-body'>
                 Seeking more than just catering for your next event? Let Rice & Shine transcend ordinary catering by delivering an immersive experience that captivates you and your guests. Our services are not just about serving food; they're about bringing a memorable culinary journey right to your gathering..

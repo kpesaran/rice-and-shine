@@ -30,7 +30,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages deploy --dist build"
   },
   "eslintConfig": {
     "extends": [
@@ -52,7 +53,8 @@
   },
   "devDependencies": {
     "@types/jquery": "^3.5.16",
-    "@types/reactstrap": "^8.7.2"
+    "@types/reactstrap": "^8.7.2",
+    "gh-pages": "^6.0.0"
   },
   "compilerOptions": {
     "target": "es5",
