@@ -22,3 +22,22 @@ User your_user_name
 IdentityFile /Users/david/.ssh/gcp
 
 1. SSH (protocol, one of the option is using rsa key pair) used Once for VM, and once for Github, we used different protocol to gain access to email through google api
+
+O
+
+
+include ghpages in package.json->run npm build->run deoploy->settings of gitbuh pages-> create squarespace cname custom domain using github documentation -> set custom domain 
+
+Once the github pages is pushed with the deployed /dist folder then go to vm
+clone repo 
+
+
+
+To Do:
+
+1) Check if subdomains work, which ones
+2) replace current gmail address with @riceandshinepaella.com or (ricenshine) inside backend/index3.
+3) Using VM enable backend server to process email
+4) Change Icon
+
+
