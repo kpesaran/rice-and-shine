@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a97fe468.css",
-    "main.js": "/static/js/main.0de25a99.js",
+    "main.js": "/static/js/main.460034b8.js",
     "static/js/787.169e44a9.chunk.js": "/static/js/787.169e44a9.chunk.js",
     "static/media/EE_RiceandShine23_1629-lowres.jpg": "/static/media/EE_RiceandShine23_1629-lowres.824cd31fbc2f3dbda256.jpg",
     "static/media/EE_RiceandShine23_1347-lowres.jpg": "/static/media/EE_RiceandShine23_1347-lowres.5ae77db6e90d18d8ef12.jpg",
@@ -32,11 +32,11 @@
     "static/media/UnicaOne-Regular.ttf": "/static/media/UnicaOne-Regular.1684ee52c054f4c9598b.ttf",
     "index.html": "/index.html",
     "main.a97fe468.css.map": "/static/css/main.a97fe468.css.map",
-    "main.0de25a99.js.map": "/static/js/main.0de25a99.js.map",
+    "main.460034b8.js.map": "/static/js/main.460034b8.js.map",
     "787.169e44a9.chunk.js.map": "/static/js/787.169e44a9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a97fe468.css",
-    "static/js/main.0de25a99.js"
+    "static/js/main.460034b8.js"
   ]
 }
