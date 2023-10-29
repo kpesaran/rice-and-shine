@@ -1,4 +1,11 @@
 @import 'global.scss';
+.nav-link-custom {
+  text-decoration: none;
+  
+}
+.nav-link-custom:hover {
+  color: $primary1-color
+}
 
 @media (min-width: 991px) {
   .navbar-container {
@@ -146,7 +153,9 @@
   .nav-link {
     display: block; /* change the display to block */
     margin: 0 auto 1rem; /* center the links */
+    text-decoration: none;
   }
+
 }
 
 @media (max-width: 400px) {

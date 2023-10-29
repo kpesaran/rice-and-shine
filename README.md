@@ -41,3 +41,10 @@ To Do:
 4) Change Icon
 
 
+
+
+// to get new email working: Download  JSON token and refresh token 
+
+inside VM Folder, drag and drop new key.json new token.json and update index.js to point to new email
+
+//another way is using a command scp in terminal... scp can be used as a copy

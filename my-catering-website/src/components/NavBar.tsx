@@ -36,24 +36,24 @@ const NavBar: React.FC<NavBarProps> = ({ isDropdownOpen, toggleDropdown }) => {
           toggleDropdown={toggleDropdown}/>
                 </div>
                 <Nav className='ml-auto'>
-                  <Nav.Link className='nav-link-custom' href='/'>
+                  <Link className='nav-link-custom' to='/'>
                     home
-                  </Nav.Link>
-                  <Nav.Link href='about' className='nav-link-custom'>
+                  </Link>
+                  <Link to='/about' className='nav-link-custom'>
                     about
-                  </Nav.Link>
-                  <Nav.Link href='/findus' className='nav-link-custom'>
+                  </Link>
+                  <Link to='/findus' className='nav-link-custom'>
                     find us
-                  </Nav.Link>
-                  <Nav.Link href="/menu" className="nav-link-custom">menu</Nav.Link>
-                  <Nav.Link className='nav-link-custom' href='/services'>
+                  </Link>
+                  <Link to ="/menu" className="nav-link-custom">menu</Link>
+                  <Link className='nav-link-custom' to='/services'>
                     services
-                  </Nav.Link>
+                  </Link>
                   {/* <Nav.Link  className="nav-link-custom"href="/testimonials">Testimonials</Nav.Link> */}
                   {/* <Nav.Link className = "nav-link-custom" href="/shop">Shop Paella Kits</Nav.Link>  */}
-                  <Nav.Link className='nav-link-custom' href='/contact'>
+                  <Link className='nav-link-custom' to='/contact'>
                     contact us
-                  </Nav.Link>
+                  </Link>
                 </Nav>
               </div>
             </Navbar>
