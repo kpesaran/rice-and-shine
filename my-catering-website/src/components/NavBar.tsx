@@ -4,6 +4,8 @@ import '../styles/navBar.scss';
 import HamburgerIcon from './HamburgerIcon';
 import { Link } from 'react-router-dom';
 
+//Used Nav.Link to integrate pages, instead Link
+
 interface NavBarProps {
   isDropdownOpen: boolean;
   toggleDropdown: () => void;
@@ -37,7 +39,7 @@ const NavBar: React.FC<NavBarProps> = ({ isDropdownOpen, toggleDropdown }) => {
                   <Nav.Link className='nav-link-custom' href='/'>
                     home
                   </Nav.Link>
-                  <Nav.Link href='/about' className='nav-link-custom'>
+                  <Nav.Link href='about' className='nav-link-custom'>
                     about
                   </Nav.Link>
                   <Nav.Link href='/findus' className='nav-link-custom'>
