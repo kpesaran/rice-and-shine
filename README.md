@@ -39,6 +39,14 @@ To Do:
 2) replace current gmail address with @riceandshinepaella.com or (ricenshine) inside backend/index3.
 3) Using VM enable backend server to process email
 4) Change Icon
+expose/open 5002 port on firewall, also open port 3000 gcp settings... 
+
+redirect uri: instead of using localhost, you need to api.riceandshinepaella.com:3000/google-auth
+
+
+
+// backend
+in terminal: ssh gcp_paella 
 
 
 
@@ -48,3 +56,5 @@ To Do:
 inside VM Folder, drag and drop new key.json new token.json and update index.js to point to new email
 
 //another way is using a command scp in terminal... scp can be used as a copy
+
+
