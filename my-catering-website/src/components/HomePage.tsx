@@ -56,7 +56,7 @@ const HomePage: React.FC = () => {
                   ></img>
                 </div>
                 <h5 className='home-subheading'>
-                  THE SECRET BEHIND OUR SIGNAUTURE PAELLAS{' '}
+                  THE SECRET BEHIND OUR SIGNATURE PAELLAS{' '}
                 </h5>
                 <img
                   className='middle-img-home not-in-browser'
