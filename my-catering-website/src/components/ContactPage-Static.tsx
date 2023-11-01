@@ -20,10 +20,6 @@ const ContactPage_Static: React.FC = () => {
           <div id='bottom-border'></div>
           <div id='contact-content-container '
             className='content-container'>
-           
-            <Container className='container'>
-              <Row className='justify-content-md-center'>
-                <Col md={6}>
                   <div className='text-center'>
                     <h1 className='contact-heading'>CONTACT US</h1>
                     {/* <p className='contact-subheading'>
@@ -37,9 +33,6 @@ const ContactPage_Static: React.FC = () => {
                      
                     </div>
                   <p id ='subheading-email'>contact@riceandshinepaella.com</p>
-                </Col>
-              </Row>
-            </Container>
           </div>
         </div>
       </div>
