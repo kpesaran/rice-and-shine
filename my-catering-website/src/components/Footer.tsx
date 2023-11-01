@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
                   <p id='footer-subheading'>A Paella Stand in Boulder, CO</p>
                 </div>
               </div>
-              <a href='http://instagram.com'>
+              <a href='http://instagram.com/riceandshinepaella/'>
                 <img id='insta-logo' src={insta_logo}></img>
               </a>
               <a href='/contact'>
