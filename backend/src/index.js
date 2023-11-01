@@ -26,6 +26,7 @@ const {authenticate} = require('@google-cloud/local-auth');
 const {google} = require('googleapis');
 
 // If modifying these scopes, delete token.json.
+//!!! 
 const SCOPES = ['https://mail.google.com/'];
 // The file token.json stores the user's access and refresh tokens, and is
 // created automatically when the authorization flow completes for the first
@@ -45,6 +46,7 @@ async function loadSavedCredentialsIfExist() {
     const credentials = JSON.parse(content);
     return google.auth.fromJSON(credentials);
   } catch (err) {
+    console.error(err)
     return null;
   }
 }
@@ -81,6 +83,7 @@ async function authorize() {
     scopes: SCOPES,
     keyfilePath: CREDENTIALS_PATH,
   });
+  console.log(client.credentials)
   if (client.credentials) {
     await saveCredentials(client);
   }
@@ -164,6 +167,7 @@ async function sendEmail(auth, mail) {
   }
 //Receive Data from front end. 
 
+authorize()
 const express = require('express');
 const cors = require('cors')
 //installing cors 
@@ -175,19 +179,19 @@ app.use(express.json());
 app.post('/contact', (req, res) => {
   const { name, email, message } = req.body;
   res.send(message);
-  console.log('hello?');
+  console.log('posted');
 
   // Setup email data
   const mailOptions = {
-    from: 'boulderpaellal@gmail.com',
-    to: 'boulderpaella@gmail.com',
+    from: 'contact@riceandshinepaella.com',
+    to: 'contact@riceandshinepaella.com',
     replyTo: email,
     subject: 'Contact Form Submission',
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>
            <p>Message: ${message}</p>`,
   };
-  
+  //to trigger this authorize you need to hit the /contact endpoint
 
   authorize()
       .then((auth) => {

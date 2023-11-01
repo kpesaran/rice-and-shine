@@ -17,7 +17,7 @@ const ServicesPage: React.FC = () => {
     {
       title: 'CORPORATE EVENT CATERING',
       description:
-      "Infuse business with pleasure through our exquisite catering services tailored for corporate affairs. Whether it's a formal luncheon, a classy dinner, or a bustling networking event, our culinary offerings set the perfect tone for your corporate needs. Taste the dedication, savor the professionalism.",
+      "Infuse business with pleasure through our catering services tailored for corporate affairs. Whether it's a formal luncheon, a classy dinner, or a bustling networking event, our culinary offerings set the perfect tone for your corporate needs. Taste the dedication, savor the professionalism.",
     },
     {
       title: 'PAELLA COOKING DEMONSTRATION',
