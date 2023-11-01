@@ -12,6 +12,7 @@ import FindUsPage from './components/FindUsPage';
 import productList, { Product } from './assets/productData';
 import Footer from './components/Footer';
 import { Link } from 'react-router-dom';
+import ContactPage_Static from './components/ContactPage-Static';
 
 import './styles/global.scss';
 import './styles/navDropDown.scss';
@@ -84,8 +85,9 @@ const App: React.FC = () => {
                   <Route path='/' element={<HomePage />} />
                   <Route path='/about' element={<AboutPage />} />
                   <Route path='/findus' element={<FindUsPage />} />
-                  <Route path="/menu" element={<MenuPage />} />
-                  <Route path='/contact' element={<ContactPage />} />
+                  <Route path='/menu' element={<MenuPage />} />
+                  {/* <Route path='/contact' element={<ContactPage />} /> */}
+                  <Route path='/contact' element={<ContactPage_Static />} />
                   <Route path='/services' element={<ServicesPage />} />
                   <Route path='/testimonials' element={<TestimonialsPage />} />
                   <Route
