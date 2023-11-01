@@ -18,7 +18,7 @@ const FindUsPage: React.FC = () => {
           {/* <h3 id='find-us-heading'>Find Us </h3> */}
           <h3 id='find-us-subheading'>
             <span id='at-the-text'>FIND US AT THE </span>
-            <strong>BOULDER FARMERS MARKET</strong>
+            <strong>BOULDER FARMERS MARKET: 13th St, Boulder, CO 80302</strong>
           </h3>
           <div id='display-info'>
             <p className='subHeading'>
