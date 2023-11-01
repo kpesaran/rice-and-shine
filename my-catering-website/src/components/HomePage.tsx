@@ -65,7 +65,7 @@ const HomePage: React.FC = () => {
                 <p className='home-body'>
                   Our pride resides in our signature paellas, crafted with a
                   blend of both authentic and premium ingredients. We then roast Valencia
-                  rice, a prized import from the fields of Spain, and enhance it with the exotic fragrance of saffron and the distinct, smoky nuances of two varieties of paprika, all unified by the richness of olive oil. . We enrich our paellas with fresh, local produce such as earthy mushrooms, seamlessly merging Spain's revered paella heritage with the abundant harvest of Colorado..
+                  rice, a prized import from the fields of Spain, and enhance it with the exotic fragrance of saffron and the distinct, smoky nuances of two varieties of paprika, all unified by the richness of olive oil. . We enrich our paellas with fresh, local produce such as earthy mushrooms, seamlessly merging Spain's revered paella heritage with the abundant harvest of Colorado.
                 </p>
                 <h5 className='home-subheading'>
                   CATERING SERVICES TAILORED TO YOUR OCCASION

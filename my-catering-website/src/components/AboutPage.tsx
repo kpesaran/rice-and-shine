@@ -34,9 +34,9 @@ const AboutPage: React.FC = () => {
                       <span>
                         As an integral part of Spanish cuisine, paella showcases
                         saffron, which is extracted from the saffron crocus
-                        flower. We honor this traditon by using real saffron in our paella and
-                        strive to provide both an unforgettable and delicous
-                        dining experience.
+                        flower. We honor this tradition by using real saffron in
+                        our paella and strive to provide both an unforgettable
+                        and delicous dining experience.
                       </span>
                     </p>
                   </Col>
